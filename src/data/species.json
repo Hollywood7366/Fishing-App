@@ -1,0 +1,653 @@
+[
+  {
+    "id": "redfish",
+    "name": "Redfish (Red Drum)",
+    "scientificName": "Sciaenops ocellatus",
+    "description": "Louisiana's most popular inshore gamefish, known for their bronze color and distinctive black spot near the tail.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Live Shrimp", "type": "live", "rating": 100, "tip": "Fish under a popping cork in 2-4ft of water" },
+        { "name": "Gold Spoon", "type": "lure", "rating": 95, "tip": "Work over grass flats on incoming tide" },
+        { "name": "Soft Plastic Shrimp", "type": "lure", "rating": 90, "tip": "Texas rig with 1/4oz jig head" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 95 },
+          { "name": "Gulp! Shrimp", "type": "soft plastic", "effectiveness": 90 },
+          { "name": "Gold Spoon", "type": "lure", "effectiveness": 85 },
+          { "name": "Topwater Mullet", "type": "lure", "effectiveness": 80 }
+        ],
+        "summer": [
+          { "name": "Live Mullet", "type": "live", "effectiveness": 95 },
+          { "name": "Topwater Walk-the-Dog", "type": "lure", "effectiveness": 90 },
+          { "name": "Soft Plastic Paddle Tail", "type": "lure", "effectiveness": 85 },
+          { "name": "Popping Cork + Shrimp", "type": "combo", "effectiveness": 90 }
+        ],
+        "fall": [
+          { "name": "Live Mullet (finger)", "type": "live", "effectiveness": 100 },
+          { "name": "Gold/Copper Spoon", "type": "lure", "effectiveness": 95 },
+          { "name": "Topwater Spook", "type": "lure", "effectiveness": 90 },
+          { "name": "Cut Mullet", "type": "cut bait", "effectiveness": 85 }
+        ],
+        "winter": [
+          { "name": "Live Shrimp (slow)", "type": "live", "effectiveness": 85 },
+          { "name": "Soft Plastic on Jig", "type": "lure", "effectiveness": 80 },
+          { "name": "Cut Blue Crab", "type": "cut bait", "effectiveness": 90 },
+          { "name": "Slow-rolled Spoon", "type": "lure", "effectiveness": 75 }
+        ]
+      },
+      "rigs": [
+        { "name": "Popping Cork Rig", "description": "18-24\" leader below cork, great for sight and sound" },
+        { "name": "Carolina Rig", "description": "Egg sinker above swivel, 2ft leader, for deeper water" },
+        { "name": "Texas Rig", "description": "Weedless soft plastic, great around structure" },
+        { "name": "Free-line", "description": "No weight, let live bait swim naturally" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 90,
+        "slack": 60,
+        "outgoing": 85,
+        "description": "Redfish feed actively on incoming and outgoing tides, especially around structure and oyster beds."
+      },
+      "windSpeed": {
+        "optimal": [5, 15],
+        "description": "Light to moderate winds. Strong winds can muddy water but may push baitfish into feeding zones."
+      },
+      "waterTemp": {
+        "optimal": [70, 85],
+        "good": [60, 90],
+        "description": "Most active in warm water. Will tolerate cooler temps but slow down below 60°F."
+      },
+      "salinity": {
+        "optimal": [10, 30],
+        "description": "Highly adaptable, found in brackish to saltwater. Can tolerate fresh water."
+      },
+      "moonPhase": {
+        "new": 85,
+        "waxingCrescent": 75,
+        "firstQuarter": 70,
+        "waxingGibbous": 75,
+        "full": 90,
+        "waningGibbous": 75,
+        "lastQuarter": 70,
+        "waningCrescent": 75,
+        "description": "Very active during new and full moon phases due to stronger tides."
+      },
+      "timeOfDay": {
+        "dawn": 95,
+        "morning": 85,
+        "midday": 60,
+        "afternoon": 70,
+        "dusk": 95,
+        "night": 75,
+        "description": "Peak feeding at dawn and dusk. Will feed throughout the day in cooler months."
+      },
+      "seasonalPatterns": {
+        "spring": 90,
+        "summer": 95,
+        "fall": 100,
+        "winter": 60,
+        "description": "Fall is prime time as fish feed heavily. Spring and summer are excellent. Winter fishing slows but still productive on warm days."
+      }
+    }
+  },
+  {
+    "id": "speckledTrout",
+    "name": "Speckled Trout",
+    "scientificName": "Cynoscion nebulosus",
+    "description": "Prized gamefish with distinctive black spots. Found in grass flats and around structure.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Live Shrimp", "type": "live", "rating": 100, "tip": "Under popping cork, twitched rhythmically" },
+        { "name": "MirrOlure", "type": "lure", "rating": 95, "tip": "Twitch-pause-twitch retrieve over grass" },
+        { "name": "Soft Plastic Paddletail", "type": "lure", "rating": 90, "tip": "Swim slowly on 1/8oz jig head" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 100 },
+          { "name": "Soft Plastic Shad", "type": "lure", "effectiveness": 90 },
+          { "name": "MirrOlure Catch 2000", "type": "lure", "effectiveness": 85 },
+          { "name": "Topwater (calm days)", "type": "lure", "effectiveness": 80 }
+        ],
+        "summer": [
+          { "name": "Live Croaker", "type": "live", "effectiveness": 95 },
+          { "name": "Topwater at Dawn", "type": "lure", "effectiveness": 95 },
+          { "name": "Soft Plastic (glow)", "type": "lure", "effectiveness": 85 },
+          { "name": "Live Shrimp (night)", "type": "live", "effectiveness": 90 }
+        ],
+        "fall": [
+          { "name": "Live Shrimp/Cocahoe", "type": "live", "effectiveness": 95 },
+          { "name": "MirrOlure (chrome)", "type": "lure", "effectiveness": 90 },
+          { "name": "Soft Plastic Curly Tail", "type": "lure", "effectiveness": 85 },
+          { "name": "Topwater Spook Jr", "type": "lure", "effectiveness": 85 }
+        ],
+        "winter": [
+          { "name": "Live Shrimp (slow)", "type": "live", "effectiveness": 90 },
+          { "name": "Soft Plastic on Heavy Jig", "type": "lure", "effectiveness": 85 },
+          { "name": "Slow Suspending Twitch Bait", "type": "lure", "effectiveness": 80 },
+          { "name": "Gulp! Swimming Mullet", "type": "soft plastic", "effectiveness": 85 }
+        ]
+      },
+      "rigs": [
+        { "name": "Popping Cork Rig", "description": "Most popular, creates commotion to attract fish" },
+        { "name": "Free-line", "description": "No weight for shallow water, natural presentation" },
+        { "name": "Drop Shot", "description": "For suspended fish in deeper water" },
+        { "name": "Jig Head + Soft Plastic", "description": "1/8-1/4oz, match the depth" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 85,
+        "slack": 70,
+        "outgoing": 90,
+        "description": "Active on moving water, especially outgoing tides that wash bait out of marshes."
+      },
+      "windSpeed": {
+        "optimal": [5, 12],
+        "description": "Prefer calmer conditions. Light chop can help, but strong winds make them harder to locate."
+      },
+      "waterTemp": {
+        "optimal": [68, 78],
+        "good": [55, 85],
+        "description": "Very temperature sensitive. Best bite in comfortable water temps. Move to deeper water when too hot or cold."
+      },
+      "salinity": {
+        "optimal": [15, 30],
+        "description": "Prefer brackish to saltwater. Less tolerant of low salinity than redfish."
+      },
+      "moonPhase": {
+        "new": 80,
+        "waxingCrescent": 75,
+        "firstQuarter": 70,
+        "waxingGibbous": 75,
+        "full": 85,
+        "waningGibbous": 75,
+        "lastQuarter": 70,
+        "waningCrescent": 75,
+        "description": "Good during moon phases with stronger tides, but less dependent than redfish."
+      },
+      "timeOfDay": {
+        "dawn": 100,
+        "morning": 90,
+        "midday": 50,
+        "afternoon": 55,
+        "dusk": 95,
+        "night": 80,
+        "description": "Prime time is early morning. Dusk is second best. Night fishing can be excellent in summer."
+      },
+      "seasonalPatterns": {
+        "spring": 100,
+        "summer": 85,
+        "fall": 95,
+        "winter": 50,
+        "description": "Spring is peak season. Fall run is excellent. Summer requires early/late fishing. Winter fish move deep."
+      }
+    }
+  },
+  {
+    "id": "flounder",
+    "name": "Flounder",
+    "scientificName": "Paralichthys lethostigma",
+    "description": "Flatfish that ambush prey from the bottom. Excellent table fare.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Live Mud Minnow", "type": "live", "rating": 100, "tip": "Fish on bottom with Carolina rig" },
+        { "name": "Gulp! Swimming Mullet", "type": "soft plastic", "rating": 95, "tip": "Drag slowly across bottom" },
+        { "name": "White Bucktail Jig", "type": "lure", "rating": 90, "tip": "Tip with shrimp or Gulp!" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Live Mud Minnow", "type": "live", "effectiveness": 95 },
+          { "name": "Gulp! Shrimp on Jig", "type": "lure", "effectiveness": 90 },
+          { "name": "White/Chartreuse Grub", "type": "soft plastic", "effectiveness": 85 },
+          { "name": "Live Finger Mullet", "type": "live", "effectiveness": 90 }
+        ],
+        "summer": [
+          { "name": "Live Finger Mullet", "type": "live", "effectiveness": 95 },
+          { "name": "Bucktail Jig + Gulp!", "type": "combo", "effectiveness": 90 },
+          { "name": "Soft Plastic Curly Tail", "type": "lure", "effectiveness": 85 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 85 }
+        ],
+        "fall": [
+          { "name": "Live Mud Minnow/Mullet", "type": "live", "effectiveness": 100 },
+          { "name": "White Bucktail", "type": "lure", "effectiveness": 95 },
+          { "name": "Gulp! 4\" Swimming Mullet", "type": "soft plastic", "effectiveness": 90 },
+          { "name": "Jigging Spoon", "type": "lure", "effectiveness": 80 }
+        ],
+        "winter": [
+          { "name": "Live Mud Minnow (slow)", "type": "live", "effectiveness": 85 },
+          { "name": "Gulp! on Heavy Jig", "type": "soft plastic", "effectiveness": 80 },
+          { "name": "Slow-dragged Soft Plastic", "type": "lure", "effectiveness": 75 },
+          { "name": "Cut Mullet", "type": "cut bait", "effectiveness": 70 }
+        ]
+      },
+      "rigs": [
+        { "name": "Carolina Rig", "description": "1/2oz egg sinker, 18\" leader - keeps bait on bottom" },
+        { "name": "Bucktail Jig", "description": "1/4-3/8oz, drag slowly on bottom" },
+        { "name": "Drop Shot", "description": "For gigging spots and deeper channels" },
+        { "name": "Knocker Rig", "description": "Weight slides to hook, great for feeling bites" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 80,
+        "slack": 50,
+        "outgoing": 95,
+        "description": "Best on outgoing tides when they position at passes and channels to ambush bait."
+      },
+      "windSpeed": {
+        "optimal": [0, 10],
+        "description": "Prefer calm conditions. Bottom feeders less affected by wind than other species."
+      },
+      "waterTemp": {
+        "optimal": [65, 75],
+        "good": [55, 80],
+        "description": "Active in moderate temps. Migrate offshore in winter, return in spring."
+      },
+      "salinity": {
+        "optimal": [20, 35],
+        "description": "Prefer saltier water. Often found near passes and Gulf access."
+      },
+      "moonPhase": {
+        "new": 75,
+        "waxingCrescent": 70,
+        "firstQuarter": 65,
+        "waxingGibbous": 70,
+        "full": 80,
+        "waningGibbous": 70,
+        "lastQuarter": 65,
+        "waningCrescent": 70,
+        "description": "Moon phase less critical than tides and current for flounder."
+      },
+      "timeOfDay": {
+        "dawn": 85,
+        "morning": 75,
+        "midday": 70,
+        "afternoon": 75,
+        "dusk": 90,
+        "night": 80,
+        "description": "Good all day. Peak activity at dawn and dusk when baitfish are most active."
+      },
+      "seasonalPatterns": {
+        "spring": 85,
+        "summer": 90,
+        "fall": 100,
+        "winter": 40,
+        "description": "Fall is best as they stage for offshore migration. Summer is excellent. Sparse in winter."
+      }
+    }
+  },
+  {
+    "id": "blackDrum",
+    "name": "Black Drum",
+    "scientificName": "Pogonias cromis",
+    "description": "Large bottom feeder known for powerful fights. Often found around structure.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Fresh Dead Shrimp", "type": "dead bait", "rating": 100, "tip": "On bottom near structure" },
+        { "name": "Blue Crab (cut)", "type": "cut bait", "rating": 95, "tip": "Quarter crab, fish on bottom" },
+        { "name": "Live Shrimp", "type": "live", "rating": 90, "tip": "Carolina rig around oyster beds" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Fresh Dead Shrimp", "type": "dead bait", "effectiveness": 100 },
+          { "name": "Blue Crab (halves)", "type": "cut bait", "effectiveness": 95 },
+          { "name": "Oyster", "type": "natural", "effectiveness": 90 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 85 }
+        ],
+        "summer": [
+          { "name": "Blue Crab", "type": "cut bait", "effectiveness": 95 },
+          { "name": "Fresh Shrimp", "type": "dead bait", "effectiveness": 90 },
+          { "name": "Cut Mullet", "type": "cut bait", "effectiveness": 80 },
+          { "name": "Soft Plastic Crab", "type": "lure", "effectiveness": 70 }
+        ],
+        "fall": [
+          { "name": "Fresh Dead Shrimp", "type": "dead bait", "effectiveness": 95 },
+          { "name": "Blue Crab", "type": "cut bait", "effectiveness": 90 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 85 },
+          { "name": "Oyster/Clam", "type": "natural", "effectiveness": 80 }
+        ],
+        "winter": [
+          { "name": "Fresh Dead Shrimp", "type": "dead bait", "effectiveness": 90 },
+          { "name": "Blue Crab (warmed)", "type": "cut bait", "effectiveness": 85 },
+          { "name": "Clam", "type": "natural", "effectiveness": 80 },
+          { "name": "Cut Mullet", "type": "cut bait", "effectiveness": 75 }
+        ]
+      },
+      "rigs": [
+        { "name": "Fish Finder Rig", "description": "Sliding sinker for feeding fish to run with bait" },
+        { "name": "Carolina Rig", "description": "Standard bottom rig, 1-2oz weight" },
+        { "name": "Double Drop", "description": "Two hooks for big drum around structure" },
+        { "name": "Knocker Rig", "description": "Weight at hook for better bite detection" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 85,
+        "slack": 65,
+        "outgoing": 80,
+        "description": "Feed actively during moving water around oyster beds and structure."
+      },
+      "windSpeed": {
+        "optimal": [0, 15],
+        "description": "Less wind-sensitive as bottom feeders. Can handle rougher conditions."
+      },
+      "waterTemp": {
+        "optimal": [60, 75],
+        "good": [50, 80],
+        "description": "Tolerate a wide temp range. Active in cooler water than many species."
+      },
+      "salinity": {
+        "optimal": [10, 30],
+        "description": "Very adaptable to different salinity levels."
+      },
+      "moonPhase": {
+        "new": 70,
+        "waxingCrescent": 70,
+        "firstQuarter": 65,
+        "waxingGibbous": 70,
+        "full": 75,
+        "waningGibbous": 70,
+        "lastQuarter": 65,
+        "waningCrescent": 70,
+        "description": "Consistent feeders less affected by moon phase than other species."
+      },
+      "timeOfDay": {
+        "dawn": 80,
+        "morning": 75,
+        "midday": 70,
+        "afternoon": 75,
+        "dusk": 85,
+        "night": 70,
+        "description": "Can be caught any time. Dawn and dusk slightly better."
+      },
+      "seasonalPatterns": {
+        "spring": 95,
+        "summer": 85,
+        "fall": 90,
+        "winter": 70,
+        "description": "Spring spawning run is prime time. Good year-round in Louisiana."
+      }
+    }
+  },
+  {
+    "id": "sheepshead",
+    "name": "Sheepshead",
+    "scientificName": "Archosargus probatocephalus",
+    "description": "Structure-oriented fish with human-like teeth. Excellent table fare.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Fiddler Crab", "type": "live", "rating": 100, "tip": "Hook through shell, fish tight to pilings" },
+        { "name": "Live Shrimp", "type": "live", "rating": 95, "tip": "Small hook, light weight" },
+        { "name": "Barnacle/Oyster", "type": "natural", "rating": 90, "tip": "Scrape off pilings, use pieces" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Fiddler Crab", "type": "live", "effectiveness": 100 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 95 },
+          { "name": "Oyster", "type": "natural", "effectiveness": 90 },
+          { "name": "Sand Flea", "type": "live", "effectiveness": 85 }
+        ],
+        "summer": [
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 90 },
+          { "name": "Fiddler Crab", "type": "live", "effectiveness": 85 },
+          { "name": "Barnacle", "type": "natural", "effectiveness": 80 },
+          { "name": "Tube Worm", "type": "natural", "effectiveness": 75 }
+        ],
+        "fall": [
+          { "name": "Fiddler Crab", "type": "live", "effectiveness": 95 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 90 },
+          { "name": "Oyster/Barnacle", "type": "natural", "effectiveness": 85 },
+          { "name": "Blue Crab (small pieces)", "type": "cut bait", "effectiveness": 80 }
+        ],
+        "winter": [
+          { "name": "Fiddler Crab", "type": "live", "effectiveness": 100 },
+          { "name": "Oyster", "type": "natural", "effectiveness": 95 },
+          { "name": "Live Shrimp (small)", "type": "live", "effectiveness": 90 },
+          { "name": "Barnacle", "type": "natural", "effectiveness": 85 }
+        ]
+      },
+      "rigs": [
+        { "name": "Tight-line Rig", "description": "Small hook (#1-2), light sinker, fish vertical" },
+        { "name": "Split Shot Rig", "description": "Minimal weight for natural fall" },
+        { "name": "Dropper Rig", "description": "Single hook above small weight" },
+        { "name": "Free-line", "description": "No weight around structure, let crab sink naturally" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 80,
+        "slack": 55,
+        "outgoing": 85,
+        "description": "Feed on moving tides around pilings, rocks, and oyster beds."
+      },
+      "windSpeed": {
+        "optimal": [0, 12],
+        "description": "Fish tight to structure regardless of wind, but calmer is better for presenting baits."
+      },
+      "waterTemp": {
+        "optimal": [55, 70],
+        "good": [45, 75],
+        "description": "One of the best cold-weather species. Most active in cooler water."
+      },
+      "salinity": {
+        "optimal": [20, 35],
+        "description": "Prefer saltier water near structure and bridges."
+      },
+      "moonPhase": {
+        "new": 65,
+        "waxingCrescent": 70,
+        "firstQuarter": 70,
+        "waxingGibbous": 70,
+        "full": 70,
+        "waningGibbous": 70,
+        "lastQuarter": 70,
+        "waningCrescent": 65,
+        "description": "Structure-oriented feeding less dependent on moon phase."
+      },
+      "timeOfDay": {
+        "dawn": 75,
+        "morning": 85,
+        "midday": 90,
+        "afternoon": 85,
+        "dusk": 75,
+        "night": 50,
+        "description": "Daytime feeders. Midday can be excellent around structure."
+      },
+      "seasonalPatterns": {
+        "spring": 100,
+        "summer": 60,
+        "fall": 90,
+        "winter": 95,
+        "description": "Winter and early spring are prime time. Summer fish move offshore to deeper water."
+      }
+    }
+  },
+  {
+    "id": "snook",
+    "name": "Snook",
+    "scientificName": "Centropomus undecimalis",
+    "description": "Warm-water gamefish prized for their aggressive strikes and fighting ability.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Live Pilchard", "type": "live", "rating": 100, "tip": "Free-line near structure on tide change" },
+        { "name": "Soft Plastic Jerkbait", "type": "lure", "rating": 95, "tip": "Twitch and pause near mangroves" },
+        { "name": "Topwater Walk-the-Dog", "type": "lure", "rating": 90, "tip": "Dawn/dusk over grass flats" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Live Pilchard", "type": "live", "effectiveness": 95 },
+          { "name": "Soft Plastic Jerkbait", "type": "lure", "effectiveness": 90 },
+          { "name": "Live Shrimp", "type": "live", "effectiveness": 85 },
+          { "name": "Suspending Twitch Bait", "type": "lure", "effectiveness": 80 }
+        ],
+        "summer": [
+          { "name": "Live Pilchard/Threadfin", "type": "live", "effectiveness": 100 },
+          { "name": "Topwater (dawn/dusk)", "type": "lure", "effectiveness": 95 },
+          { "name": "Soft Plastic Paddle Tail", "type": "lure", "effectiveness": 90 },
+          { "name": "Live Mullet", "type": "live", "effectiveness": 85 }
+        ],
+        "fall": [
+          { "name": "Live Mullet (finger)", "type": "live", "effectiveness": 95 },
+          { "name": "Soft Plastic (white/glow)", "type": "lure", "effectiveness": 90 },
+          { "name": "Topwater Spook", "type": "lure", "effectiveness": 85 },
+          { "name": "Live Pilchard", "type": "live", "effectiveness": 90 }
+        ],
+        "winter": [
+          { "name": "Live Shrimp (slow)", "type": "live", "effectiveness": 80 },
+          { "name": "Slow Soft Plastic", "type": "lure", "effectiveness": 75 },
+          { "name": "Suspending Lure", "type": "lure", "effectiveness": 70 },
+          { "name": "Cut Bait", "type": "cut bait", "effectiveness": 65 }
+        ]
+      },
+      "rigs": [
+        { "name": "Free-line", "description": "No weight, let bait swim naturally to structure" },
+        { "name": "Split Shot", "description": "Minimal weight for deeper presentations" },
+        { "name": "Fluorocarbon Leader", "description": "30-40lb, snook have rough gill plates" },
+        { "name": "Jig Head + Paddle Tail", "description": "1/4oz, swim and twitch retrieve" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 90,
+        "slack": 60,
+        "outgoing": 95,
+        "description": "Highly tide-dependent. Position at passes and current breaks to ambush bait."
+      },
+      "windSpeed": {
+        "optimal": [5, 15],
+        "description": "Some wind helps oxygenate water and position baitfish."
+      },
+      "waterTemp": {
+        "optimal": [75, 88],
+        "good": [70, 92],
+        "description": "Warm water species. Very active in summer heat. Sensitive to cold."
+      },
+      "salinity": {
+        "optimal": [15, 35],
+        "description": "Move between fresh and saltwater following bait and temperature."
+      },
+      "moonPhase": {
+        "new": 90,
+        "waxingCrescent": 75,
+        "firstQuarter": 70,
+        "waxingGibbous": 75,
+        "full": 95,
+        "waningGibbous": 75,
+        "lastQuarter": 70,
+        "waningCrescent": 75,
+        "description": "Strong moon phases trigger aggressive feeding, especially during spawning."
+      },
+      "timeOfDay": {
+        "dawn": 100,
+        "morning": 90,
+        "midday": 65,
+        "afternoon": 70,
+        "dusk": 100,
+        "night": 95,
+        "description": "Dawn and dusk are magic hours. Night fishing can be phenomenal in summer."
+      },
+      "seasonalPatterns": {
+        "spring": 85,
+        "summer": 100,
+        "fall": 90,
+        "winter": 30,
+        "description": "Summer is prime time. Very temperature sensitive - rare in South Louisiana but increasing."
+      }
+    }
+  },
+  {
+    "id": "tarpon",
+    "name": "Tarpon",
+    "scientificName": "Megalops atlanticus",
+    "description": "The 'Silver King' - powerful gamefish known for spectacular aerial displays.",
+    "baitsAndLures": {
+      "topPicks": [
+        { "name": "Live Mullet", "type": "live", "rating": 100, "tip": "6-8 inch mullet, free-lined or under float" },
+        { "name": "Live Crab", "type": "live", "rating": 95, "tip": "Pass crab, hooked through corner of shell" },
+        { "name": "Large Soft Plastic Swim Bait", "type": "lure", "rating": 85, "tip": "Slow swim near rolling fish" }
+      ],
+      "bySeasonAndCondition": {
+        "spring": [
+          { "name": "Live Mullet", "type": "live", "effectiveness": 95 },
+          { "name": "Live Crab", "type": "live", "effectiveness": 90 },
+          { "name": "Large Swim Bait", "type": "lure", "effectiveness": 80 },
+          { "name": "DOA Baitbuster", "type": "lure", "effectiveness": 75 }
+        ],
+        "summer": [
+          { "name": "Live Mullet (large)", "type": "live", "effectiveness": 100 },
+          { "name": "Live Pass Crab", "type": "live", "effectiveness": 95 },
+          { "name": "Large Topwater", "type": "lure", "effectiveness": 85 },
+          { "name": "6\" Soft Plastic Shad", "type": "lure", "effectiveness": 80 }
+        ],
+        "fall": [
+          { "name": "Live Mullet", "type": "live", "effectiveness": 95 },
+          { "name": "Live Crab", "type": "live", "effectiveness": 90 },
+          { "name": "Large Paddle Tail", "type": "lure", "effectiveness": 80 },
+          { "name": "Fly (tarpon pattern)", "type": "fly", "effectiveness": 85 }
+        ],
+        "winter": [
+          { "name": "Large Live Bait", "type": "live", "effectiveness": 70 },
+          { "name": "Slow Swim Bait", "type": "lure", "effectiveness": 60 },
+          { "name": "Cut Mullet", "type": "cut bait", "effectiveness": 55 },
+          { "name": "Live Shrimp (large)", "type": "live", "effectiveness": 50 }
+        ]
+      },
+      "rigs": [
+        { "name": "Circle Hook Rig", "description": "7/0-9/0 circle hook, 60-80lb fluorocarbon leader" },
+        { "name": "Float Rig", "description": "Balloon or float to keep bait at target depth" },
+        { "name": "Free-line", "description": "Let big mullet swim naturally to feeding fish" },
+        { "name": "Heavy Spinning", "description": "For casting lures to rolling/feeding fish" }
+      ]
+    },
+    "preferences": {
+      "tidePhase": {
+        "incoming": 95,
+        "slack": 70,
+        "outgoing": 90,
+        "description": "Very active on moving water, especially incoming tides bringing bait."
+      },
+      "windSpeed": {
+        "optimal": [5, 12],
+        "description": "Light winds preferable for sight fishing. Can handle moderate winds."
+      },
+      "waterTemp": {
+        "optimal": [75, 88],
+        "good": [72, 92],
+        "description": "Warm water species. Most active in summer heat."
+      },
+      "salinity": {
+        "optimal": [25, 35],
+        "description": "Prefer saltier water but can tolerate brackish conditions."
+      },
+      "moonPhase": {
+        "new": 85,
+        "waxingCrescent": 80,
+        "firstQuarter": 75,
+        "waxingGibbous": 80,
+        "full": 90,
+        "waningGibbous": 80,
+        "lastQuarter": 75,
+        "waningCrescent": 80,
+        "description": "Strong tides during moon phases trigger feeding. Spawning related to moon."
+      },
+      "timeOfDay": {
+        "dawn": 100,
+        "morning": 95,
+        "midday": 80,
+        "afternoon": 85,
+        "dusk": 100,
+        "night": 90,
+        "description": "Dawn and dusk are prime. Can be caught all day when actively feeding or migrating."
+      },
+      "seasonalPatterns": {
+        "spring": 80,
+        "summer": 100,
+        "fall": 90,
+        "winter": 20,
+        "description": "Summer migration is peak season. Spring and fall runs excellent. Winter fish move south."
+      }
+    }
+  }
+]

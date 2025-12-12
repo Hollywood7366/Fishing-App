@@ -1,0 +1,19 @@
+[
+  {
+    "id": "reef-sample-1",
+    "name": "LDWF Reef (Sample)",
+    "area": "Louisiana Coast",
+    "type": "artificial_reef",
+    "source": "LDWF Artificial Reef Program",
+    "lat": 29.0,
+    "lng": -90.0,
+    "knownFor": "Artificial reef",
+    "access": "Boat access required"
+  }
+]
+
+
+
+
+
+
