@@ -1,0 +1,84 @@
+name: Automated checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: Build, forecast tests, and dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Install locked dependencies
+        id: install
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Production build
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npm run build
+      # The existing test imports Vite's import.meta.env. Bundle it with an
+      # empty environment so CI runs offline and needs no API credentials.
+      - name: Prepare existing forecast tests for Node
+        id: prepare_tests
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: |
+          node --input-type=module <<'JS'
+          import { build } from 'esbuild';
+          import { join } from 'node:path';
+          await build({
+            entryPoints: ['src/utils/forecastUtils.test.js'],
+            bundle: true,
+            platform: 'node',
+            format: 'esm',
+            define: { 'import.meta.env': '{}' },
+            outfile: join(process.env.RUNNER_TEMP, 'forecast-test.mjs'),
+          });
+          JS
+      - name: Forecast tests in UTC
+        if: ${{ !cancelled() && steps.prepare_tests.outcome == 'success' }}
+        env:
+          TZ: UTC
+        run: node "$RUNNER_TEMP/forecast-test.mjs"
+      - name: Forecast tests in Louisiana time
+        if: ${{ !cancelled() && steps.prepare_tests.outcome == 'success' }}
+        env:
+          TZ: America/Chicago
+        run: node "$RUNNER_TEMP/forecast-test.mjs"
+      - name: Audit dependencies for high or critical vulnerabilities
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
+        run: npm audit --audit-level=high
+
+  python:
+    name: Python script bug and security checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Install analysis tools
+        id: tools
+        run: python -m pip install --disable-pip-version-check ruff==0.16.7 bandit==1.9.4
+      - name: Python syntax and critical bugs
+        run: ruff check --isolated --select E9,F63,F7,F82 scripts
+      - name: Python security scan
+        if: ${{ !cancelled() && steps.tools.outcome == 'success' }}
+        run: bandit -r scripts -lll -iii
